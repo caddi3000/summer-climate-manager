@@ -101,6 +101,6 @@ class SCMFrontendSensor(SCMEntity, SensorEntity):
                 "open": {"climate": d.get(CONF_OPEN_CLIMATE), "temp": d.get(CONF_OPEN_TEMP), "humidity": d.get(CONF_OPEN_HUMIDITY), "eco": d.get(CONF_HISENSE_ECO), "quiet": d.get(CONF_HISENSE_QUIET)},
                 "energy": {"grid_import": d.get(CONF_GRID_IMPORT), "grid_export": d.get(CONF_GRID_EXPORT), "ev_charging": d.get(CONF_EV_CHARGING), "ev_power": d.get(CONF_EV_POWER)},
             },
-            "floorplan_url": "/summer_climate_manager/floorplan.png",
-            "card_version": "0.1.3",
+            "floorplan_url": "/summer_climate_manager_static/floorplan.png?v=015",
+            "card_version": "0.1.5",
         }

@@ -9,7 +9,7 @@ from homeassistant.helpers.typing import ConfigType
 from .const import DOMAIN, PLATFORMS
 
 FRONTEND_URL = "/summer_climate_manager_static"
-CARD_URL = f"{FRONTEND_URL}/summer-climate-floorplan.js?v=014"
+CARD_URL = f"{FRONTEND_URL}/summer-climate-floorplan.js?v=015"
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:

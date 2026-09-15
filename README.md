@@ -55,3 +55,13 @@ type: custom:summer-climate-floorplan
 
 If a browser had v0.1.3 open, perform one hard refresh after the Home Assistant
 restart. The resource URL includes a v0.1.4 cache-busting query string.
+
+
+## v0.1.5
+
+- New approved floorplan artwork.
+- The mock dashboard chrome/data is cropped out of the background; temperatures and states are live Lovelace overlays.
+- Added a clickable Delta AC Max / EVCC hotspot over the under-house garage area.
+- Added an EV Charger tile that opens the configured EVCC/charger entity.
+- Full-width responsive layout.
+- Fixed floorplan asset URL, GUI version reporting, Unicode symbols and cache busting.
