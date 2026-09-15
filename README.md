@@ -37,3 +37,21 @@ If the card says it is waiting for Frontend Config, reload the integration/resta
 ## Safety
 
 v0.1.3 does not enable automatic AC actuation. The decision engine remains monitor/recommendation-first. Buttons in the frontend are explicit manual climate commands.
+
+
+## v0.1.4
+
+Fixes loading of the companion Lovelace card.
+
+The integration now serves its frontend assets through Home Assistant's supported
+`async_register_static_paths` API and registers the card JavaScript with the
+frontend during integration setup.
+
+After updating and restarting Home Assistant, use:
+
+```yaml
+type: custom:summer-climate-floorplan
+```
+
+If a browser had v0.1.3 open, perform one hard refresh after the Home Assistant
+restart. The resource URL includes a v0.1.4 cache-busting query string.

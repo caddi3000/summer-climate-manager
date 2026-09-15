@@ -30,7 +30,7 @@ class SummerClimateFloorplan extends HTMLElement {
     if(!f){ this.shadowRoot.innerHTML=`<ha-card><div style="padding:20px">Summer Climate Manager frontend is waiting for the <b>Frontend Config</b> entity. Restart Home Assistant after updating the integration.</div></ha-card>`; return; }
     const cfg=f.card_config, z=this.selected||"open";
     const labels={kids:"Bed 2 (Kids)",nursery:"Bed 3 (Nursery)",master:"Bed 1 (Master)",open:"Open Plan"};
-    const img=f.floorplan_url||"/summer_climate_manager/floorplan.png";
+    const img=f.floorplan_url||"/summer_climate_manager_static/floorplan.png?v=014";
     const gridImport=this.manager("grid_import"), gridExport=this.manager("grid_export"), evPower=this.manager("ev_charger_power"), solar=this.manager("solar_level"), strategy=this.manager("strategy");
     const eco=cfg.open?.eco ? this.val(cfg.open.eco).toUpperCase() : this.manager("open_plan_eco_recommendation");
     const quiet=cfg.open?.quiet ? this.val(cfg.open.quiet).toUpperCase() : this.manager("open_plan_quiet_recommendation");
