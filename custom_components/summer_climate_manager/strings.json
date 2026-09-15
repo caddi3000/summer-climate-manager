@@ -1,0 +1,34 @@
+{
+  "title": "Summer Climate Manager",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Summer Climate Manager",
+        "description": "Select the existing Home Assistant entities used to monitor your solar-aware climate system. v0.1.0 is monitor-only and will not control any air conditioner.",
+        "data": {
+          "grid_import": "Fronius grid import power",
+          "grid_export": "Fronius grid export power",
+          "ev_charging": "EVCC charging status",
+          "ev_power": "EVCC charger power",
+          "kids_climate": "Kids room air conditioner",
+          "kids_temp": "Kids room temperature sensor",
+          "kids_humidity": "Kids room humidity sensor",
+          "nursery_climate": "Nursery air conditioner",
+          "nursery_temp": "Nursery temperature sensor",
+          "nursery_humidity": "Nursery humidity sensor",
+          "master_climate": "Master bedroom air conditioner",
+          "master_temp": "Master bedroom temperature sensor",
+          "master_humidity": "Master bedroom humidity sensor",
+          "open_climate": "Open-plan / Hisense air conditioner",
+          "open_temp": "Open-plan temperature sensor (optional; leave blank to use AC temperature)",
+          "open_humidity": "Open-plan humidity sensor (optional)",
+          "hisense_eco": "Hisense Eco switch",
+          "hisense_quiet": "Hisense Quiet / Fan Mute switch"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Summer Climate Manager is already configured."
+    }
+  }
+}
