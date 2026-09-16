@@ -57,7 +57,7 @@ If a browser had v0.1.3 open, perform one hard refresh after the Home Assistant
 restart. The resource URL includes a v0.1.4 cache-busting query string.
 
 
-## v0.1.5
+## v0.1.6
 
 - New approved floorplan artwork.
 - The mock dashboard chrome/data is cropped out of the background; temperatures and states are live Lovelace overlays.
