@@ -1,4 +1,4 @@
-const CARD_VERSION = "0.1.5";
+const CARD_VERSION = "0.1.7";
 
 class SummerClimateFloorplan extends HTMLElement {
   setConfig(config) {
@@ -75,7 +75,7 @@ class SummerClimateFloorplan extends HTMLElement {
     const cfg=f.card_config, z=this.selected||"open";
     const labels={kids:"Bed 2 (Kids)",nursery:"Bed 3 (Nursery)",
                   master:"Bed 1 (Master)",open:"Open Plan"};
-    const img="/summer_climate_manager_static/floorplan.png?v=015";
+    const img="/summer_climate_manager_static/floorplan.png?v=017";
     const gridImport=this.manager("grid_import");
     const gridExport=this.manager("grid_export");
     const evPower=this.manager("ev_charger_power");
